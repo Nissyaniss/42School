@@ -1,0 +1,42 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "Terminal",
+      "focus": true,
+	  "icon": "code",
+	  "color": "terminal.ansiRed",
+	  "commands": [
+		"cd [fileDirname]"
+	]
+    },
+    {
+      "name": "Norm",
+	  "icon": "check",
+      "color": "terminal.ansiGreen",
+	  "execute": false,
+	  "commands": [
+    	"cd [fileDirname]",
+		"clear",
+		"norm"
+	  ]
+    },
+	{
+		"name": "Normh",
+		"icon": "check",
+		"color": "terminal.ansiYellow",
+		"execute": false,
+		"commands": [
+		  "cd [fileDirname]",
+		  "clear",
+		  "normh"
+		]
+	  },
+    {
+      "name": "Variable Substitution",
+	  "onlySingle": true,
+      "description": "Many special strings can be substituted dynamically",
+      "command": "echo \"workspaceFolder: [workspaceFolder]\\nworkspaceFolderBasename: [workspaceFolderBasename]\\nfile: [file]\\nrelativeFile: [relativeFile]\\nfileBasename: [fileBasename]\\nfileBasenameNoExtension: [fileBasenameNoExtension]\\nfileDirname: [fileDirname]\\nfileExtname: [fileExtname]\\ncwd: [cwd]\\nlineNumber: [lineNumber]\""
+    }
+  ]
+}

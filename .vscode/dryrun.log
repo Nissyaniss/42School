@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/nfs/homes/ylasbord/Exos'
+make: Leaving directory '/nfs/homes/ylasbord/Exos'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
